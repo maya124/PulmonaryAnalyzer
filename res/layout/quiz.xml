@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quizscreen"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RadioGroup
+        android:id="@+id/GenderChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:textColor="#FFFFFF" 
+        android:layout_marginTop="190dp" >
+
+        <RadioButton
+            android:id="@+id/gender_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/gender_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/smokeYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GenderChoice"
+        android:layout_below="@+id/GenderChoice"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="200dp"
+        android:ems="10"
+        android:inputType="number">
+     </EditText>
+
+    <RadioGroup
+        android:id="@+id/Pollution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"         
+        android:layout_alignLeft="@+id/GenderChoice"
+        android:layout_below="@+id/smokeYears"
+        android:layout_marginTop="70dp" >
+
+        <RadioButton
+            android:id="@+id/pollution_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/pollution_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignLeft="@+id/GenderChoice"
+        android:layout_below="@+id/GenderChoice"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp" >
+
+    </EditText>
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/age"
+        android:layout_marginLeft="180dp" 
+        android:layout_marginTop="50dp" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="430dp"
+        android:layout_marginTop="680dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/results_heading"
+        android:visibility = "gone"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="195dp"
+        android:text="Assessment Results\n    Expected Values"
+        android:textStyle="bold"    
+        android:textColor="#FFFFFF"    
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/results_FVC_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility = "gone"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="260dp"
+        android:text="FVC:"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/results_FEV1_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility = "gone"
+        android:layout_marginTop="325dp"
+        android:layout_marginLeft="250dp"
+        android:text="FEV1:"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"    
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/results_ratio_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility = "gone"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="210dp"
+        android:textStyle="bold"
+        android:text="FEV1/FVC:"
+        android:textColor="#FFFFFF"    
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/fvc_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/results_FVC_heading"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="10dp"
+        android:visibility = "gone"
+        android:text="  "
+        android:textColor="#FFFFFF" 
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/fev1_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/results_FEV1_heading"
+        android:text="  "
+        android:layout_marginTop="325dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF" 
+        android:visibility = "gone"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/ratio_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/results_ratio_heading"
+        android:text="  "
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="10dp"
+        android:visibility = "gone"
+        android:textColor="#FFFFFF" 
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/gender_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="30dp"
+        android:text="Gender"
+        android:textStyle="bold"    
+        android:textColor="#FFFFFF"   
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/age_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="30dp"
+        android:text="Age (in years): "
+        android:textStyle="bold"    
+        android:textColor="#FFFFFF"   
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/height_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="30dp"
+        android:text="Height (in inches): "
+        android:textStyle="bold"    
+        android:textColor="#FFFFFF"   
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/smoke_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="30dp"
+        android:text="Number of Years Smoked: "
+        android:textStyle="bold"    
+        android:textColor="#FFFFFF"   
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/pollution_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="565dp"
+        android:layout_marginLeft="30dp"
+        android:text="Is there significant air pollution in your residential area? "
+        android:textStyle="bold"    
+        android:textColor="#FFFFFF"   
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/begin_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="450dp"
+        android:visibility = "gone"
+        android:text="Begin Test" />
+
+</RelativeLayout>

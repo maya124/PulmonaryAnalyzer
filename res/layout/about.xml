@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutscreen"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="600dp"
+        android:layout_height="610dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:src="@drawable/aboutpage1" />
+    
+     <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="600dp"
+        android:layout_height="610dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:src="@drawable/aboutpage2" />
+
+     <ImageButton
+         android:id="@+id/page1Button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="70dp"
+         android:layout_marginRight="60dp"
+         android:src="@drawable/rightarrow" />
+
+     <ImageButton
+         android:id="@+id/page2Button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/page1Button"
+         android:layout_marginLeft="60dp"
+         android:layout_toRightOf="@+id/textView1"
+         android:visibility="invisible"
+         android:src="@drawable/leftarrow" />
+
+</RelativeLayout>

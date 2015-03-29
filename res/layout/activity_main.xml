@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepage"
+    android:gravity="top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_marginTop="60dp"
+        android:background="@null"
+        android:baselineAlignBottom="true"
+        android:cropToPadding="false"
+        android:src="@drawable/homepagebuttonxml" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="210dp"
+        android:background="@null"
+        android:baselineAlignBottom="true"
+        android:cropToPadding="false"
+        android:src="@drawable/homepagebuttonxml" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageButton1"
+        android:layout_marginTop="60dp"
+        android:background="@null"
+        android:baselineAlignBottom="true"
+        android:cropToPadding="false"
+        android:src="@drawable/homepagebuttonxml" 
+     />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_marginTop="60dp"
+        android:background="@null"
+        android:baselineAlignBottom="true"
+        android:cropToPadding="false"
+        android:src="@drawable/homepagebuttonxml" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Settings"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Self-Assessment"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Begin Testing"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="About COPD"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

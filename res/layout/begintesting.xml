@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/testing"
+    android:gravity="top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+   <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+   <Button
+       android:id="@+id/scanButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="30dp"
+       android:text="Scan for BLE Devices" />
+
+   <TextView
+       android:id="@+id/info"
+       android:editable = "true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="16dp"
+       android:text="" />
+
+
+
+
+   <TextView
+       android:id="@+id/incomingData"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_below="@+id/countdown"
+       android:text="TextView"
+       android:visibility="invisible" />
+
+   <TextView
+       android:id="@+id/fvc"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="400dp"
+       android:layout_marginTop="180dp"
+       android:text="  "
+       android:textColor="#FFFFFF"
+       android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="400dp"
+       android:layout_marginTop="260dp"
+       android:text=" "
+       android:textColor="#FFFFFF"
+       android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+   <TextView
+       android:id="@+id/fev1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="400dp"
+       android:layout_marginTop="100dp"
+       android:text="  "
+       android:textColor="#FFFFFF"
+       android:textAppearance="?android:attr/textAppearanceLarge" />
+   
+   <TextView
+       android:id="@+id/diseases"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="400dp"
+       android:layout_marginTop="340dp"
+       android:text="  "
+       android:textColor="#FFFFFF"
+       android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
